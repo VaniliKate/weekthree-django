@@ -3,3 +3,5 @@ from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
+class Projects(models.Model):
+    name=models.CharField()
