@@ -3,6 +3,13 @@
 ## Description
 This is a web application developed using Django framework. This app allows users to register and share their projects of choice. Once a user has posted the project to be reviewed, the app is reviewed in three categories Content,Usability and Design.
 
+## Technologies
+The project is created with:
+* HTML:5 for giving the structure of the webpage.
+* CSS:3 for styling the webpage.
+* Bootstrap for more styling of the webpage.
+* Python Django for the functionality.
+
 ## Setup/Installation Requirements
 * A PC mainly with an Operating system.
 * Python3.6 or later is installed in your PC.
