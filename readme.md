@@ -16,3 +16,24 @@ This is a web application developed using Django framework. This app allows user
 * run `python3.6 manage.py runserver `
 * The application should work
 * for the test run `python manage.py test award`
+
+### Behaviour Driven Development
+* The program should return all projects on the directories page<br>
+Given:All projects<br>
+When: Url is changed to directory page<br>
+Then: All projects are displayed<br>
+
+* Admin site should be displayed when "admin/" url is chosen<br>
+Given: An admin url<br>
+When: User enters admin url in browser<br>
+Then: Admin Login is displayed<br>
+
+* User authentication occurs when Admin tries to Login<br>
+Given:Admin page is accessed<br>
+When: User tries to login<br>
+Then: User details are authenticated to confirm if user is an admin<br>
+
+* User session should end when logout url is chosen<br>
+Given:Logout option is given<br>
+When: User chooses logout option<br>
+Then: User session is ended<br>
