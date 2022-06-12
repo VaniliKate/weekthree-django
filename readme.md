@@ -10,44 +10,74 @@ The project is created with:
 * Bootstrap for more styling of the webpage.
 * Python Django for the functionality.
 
-## Installation
-* Clone the repository directly to your pc
-    https://github.com/VaniliKate/weekthree-django.git
-* To be able to run this project on your PC you need to have python already installed Python version 3.6 and above. Incase you dont have it use this commands to install
-    $ sudo add-apt-repository ppa:jonathonf/python-3.6
-    $ sudo apt-get update
-    $ sudo apt-get install python3.6
-* Install Python command tool called PIP which comes preinstalled in linux and mac. For linux use this to install pip
-    $ sudo apt-get install python3-pip 
-* For mac 0S use this command to install pip
-    sudo easy_install pip
-Open your editor and run the cloned repository and install the modules below to run effectivey.
+## Features
 
-* To install all requirements and extentions needed to run the app install requirements using
+- User authentication(Sign up and sign in).
+- Posting projects.
+- Rate projects.
+- Make comment on a posted project.
 
-    pip install -r requirements.txt
-* To run the class test use the following commands in the terminal
-    python3.6 manage.py test
-* Now your ready to run the modules type the fillowing commands to run the app locally.
-    ./start.sh or python3.6 manage.py server
+### Installation
 
-### Behaviour Driven Development
-* The program should return all projects on the directories page<br>
-Given:All projects<br>
-When: Url is changed to directory page<br>
-Then: All projects are displayed<br>
+- Make sure Python is installed.
+- Clone https://github.com/VaniliKate/weekthree-django.git and cd into weekthree-django.
+- Install requirements using following command.
 
-* Admin site should be displayed when "admin/" url is chosen<br>
-Given: An admin url<br>
-When: User enters admin url in browser<br>
-Then: Admin Login is displayed<br>
+```
+pip install -r requirements.txt
+```
 
-* User authentication occurs when Admin tries to Login<br>
-Given:Admin page is accessed<br>
-When: User tries to login<br>
-Then: User details are authenticated to confirm if user is an admin<br>
+### Usage
 
-* User session should end when logout url is chosen<br>
-Given:Logout option is given<br>
-When: User chooses logout option<br>
-Then: User session is ended<br>
+- Create a virtual environment.
+
+```
+python3 -m venv venv
+. venv/bin/activate
+```
+
+- Declare following environment variables in the .env file.
+
+```
+> SECRET_KEY = 'secret key'
+> DEBUG = True
+> EMAIL_USERNAME = 'your email address'
+> EMAIL_PASSWORD = 'your password'
+```
+
+- Make migrations.
+
+```
+python manage.py migrate
+```
+
+- Commit the migrations.
+
+```
+python manage.py makemigrations
+```
+
+- Create a super user.
+
+```
+python manage.py createsuperuser
+```
+
+- Run the app.
+
+```
+python manage.py runserver
+```
+
+- This opens the app at `localhost:8000` or `http://127.0.0.1:8000/`
+
+## Authors
+
+- **Kate Vanili(2022)**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+[Live Site] (https://rb.gy/c82qui)
+Incase of browser warning just ignore and proceed and click visit unsafe.
