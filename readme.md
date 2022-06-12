@@ -10,19 +10,26 @@ The project is created with:
 * Bootstrap for more styling of the webpage.
 * Python Django for the functionality.
 
-## Setup/Installation Requirements
-* A PC mainly with an Operating system.
-* Python3.6 or later is installed in your PC.
-* Postgresql installed
-* clone the repository into your local machine **(https://github.com/VaniliKate/weekthree-django.git)**
-* navigate to the cloned folder by `cd weekthree-django`
-* Create a virtual environment
-* run `source virtual/bin/activate`
-* install Django `pip install django=1.11`
-* pip install `requirements.txt`
-* run `python3.6 manage.py runserver `
-* The application should work
-* for the test run `python manage.py test award`
+## Installation
+* Clone the repository directly to your pc
+    https://github.com/VaniliKate/weekthree-django.git
+* To be able to run this project on your PC you need to have python already installed Python version 3.6 and above. Incase you dont have it use this commands to install
+    $ sudo add-apt-repository ppa:jonathonf/python-3.6
+    $ sudo apt-get update
+    $ sudo apt-get install python3.6
+* Install Python command tool called PIP which comes preinstalled in linux and mac. For linux use this to install pip
+    $ sudo apt-get install python3-pip 
+* For mac 0S use this command to install pip
+    sudo easy_install pip
+Open your editor and run the cloned repository and install the modules below to run effectivey.
+
+* To install all requirements and extentions needed to run the app install requirements using
+
+    pip install -r requirements.txt
+* To run the class test use the following commands in the terminal
+    python3.6 manage.py test
+* Now your ready to run the modules type the fillowing commands to run the app locally.
+    ./start.sh or python3.6 manage.py server
 
 ### Behaviour Driven Development
 * The program should return all projects on the directories page<br>
