@@ -71,6 +71,10 @@ python manage.py runserver
 
 - This opens the app at `localhost:8000` or `http://127.0.0.1:8000/`
 
+## APIs
+- [https://vanili-awards.herokuapp.com/api/projects/] **Projects endpoint** 
+- [https://vanili-awards.herokuapp.com/api/profiles/] **Profiles endpoint**
+
 ## Authors
 
 - **Kate Vanili(2022)**
